@@ -1,8 +1,16 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Open Science Group"
+disableKinds = ["sitemap", "RSS"]
+theme = "."
+themesDir = "../"
 
-theme = "reveal-hugo"
+[author]
+name = "Josh Dzielak"
+
+[params.reveal_hugo]
+history = true
+
 [outputFormats.Reveal]
 baseName = "index"
 mediaType = "text/html"
