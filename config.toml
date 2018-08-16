@@ -1,16 +1,15 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Open Science Group"
-theme = "."
-themesDir = "../"
+theme = "reveal-hugo"
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
 
 [author]
 name = "David Bovill"
 
 [params.reveal_hugo]
 history = true
-
-[outputFormats.Reveal]
-baseName = "index"
-mediaType = "text/html"
-isHTML = true

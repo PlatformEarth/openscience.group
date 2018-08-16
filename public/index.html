@@ -1,0 +1,478 @@
+<!doctype html><html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.46" />
+    <meta charset="utf-8">
+    <title>reveal-hugo</title>
+    <meta name="description" content="A Hugo theme for creating Reveal.js presentations">
+    <meta name="author" content="David Bovill">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/reveal-js/css/reveal.css">
+    <link rel="stylesheet" href="/reveal-hugo/themes/robot-lung.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+    
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '\/reveal-js/css/print/pdf.css' : '\/reveal-js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    
+
+<style>
+ 
+.reveal section pre {
+  box-shadow: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px solid lightgrey;
+}
+.reveal section pre:hover {
+  border: 1px solid grey;
+  transition: border 0.3s ease;
+}
+.reveal section pre > code {
+  padding: 10px;
+}
+.reveal table {
+  font-size: 0.65em;
+}
+ 
+.reveal section.side-by-side h1 {
+  position: absolute;
+}
+.reveal section.side-by-side h1:first-of-type {
+  left: 25%;
+}
+.reveal section.side-by-side h1:nth-of-type(2) {
+  right: 25%;
+}
+</style>
+
+  </head>
+  <body>
+  <div class="reveal">
+  
+  <div class="slides">
+    
+    <section>
+
+<h1 id="toc_0">📽️</h1>
+
+<h2 id="open-science-group">Open Science Group</h2>
+
+<p>The Open Science Group is a not-for-profit and open membership organisation working towards creating new ways for scientists to reshape the way they are funded and incentivised to create open science.</p>
+</section><section>
+
+<h1 id="publishing">Publishing</h1>
+
+</section><section>
+
+<h2 id="legal">Legal</h2>
+
+<p>Open Science Group The Open Science Group is a not-for-profit and open member organisation, with the purpose of exploring ways in which the wider community of scientists can come together to express and make decisions aligned with open science principles.</p>
+
+</section><section>
+
+<h2 id="governance-acting-together">Governance Acting together.</h2>
+
+<p>Platform Open source tools for attribution, funding, and publishing open science.</p>
+
+</section><section>
+
+<h2 id="funding">Funding</h2>
+
+<ul>
+<li>Deploy to <a href="https://netlify.com/">Netlify</a></li>
+<li>Edit with <a href="https://forestry.io/">Forestry</a></li>
+</ul>
+
+</section><section>
+
+<h1 id="toc_4">🙏</h1>
+
+<p>Contribute by opening issues and pull requests.</p>
+
+</section><section>
+
+<h1 id="thanks">Thanks!</h1>
+
+</section><section>
+
+<h1 id="toc_6">↩️</h1>
+
+<h4 id="start-over"><a href="#">Start over</a></h4>
+</section><section>
+
+<h2 id="what-s-included">What&rsquo;s included?</h2>
+
+<ul>
+<li>All Reveal.js HTML, CSS and JS (v3.7.0)</li>
+<li>All out-of-the-box Reveal.js themes</li>
+<li>Two custom Reveal.js themes (including this one)</li>
+</ul>
+
+</section><section>
+
+<h2 id="features">Features</h2>
+
+<ul>
+<li>Write slides in Markdown in one or more files</li>
+<li>Shorcodes for fragments, sections, slides &amp; more</li>
+<li>All Reveal.js parameters can be customized</li>
+<li>Any Hugo section can be output as a presentation</li>
+</ul>
+</section><section>
+
+<h1 id="usage">Usage</h1>
+
+</section><section>
+
+<h2 id="prerequisite">Prerequisite</h2>
+
+<p>First, add this to your <code>config.toml</code>:</p>
+
+<pre><code class="language-toml">[outputFormats.Reveal]
+baseName = &quot;index&quot;
+mediaType = &quot;text/html&quot;
+isHTML = true
+</code></pre>
+
+</section><section>
+
+<h3 id="presentation-at-site-root">Presentation at site root</h3>
+
+<p>Create <code>content/_index.md</code>:</p>
+
+<pre><code class="language-markdown">+++
+outputs = [&quot;Reveal&quot;]
++++
+
+# Slide 1
+
+Hello world!
+</code></pre>
+
+</section><section>
+
+<h3 id="add-slides-in-same-file">Add slides in same file</h3>
+
+<p>Separate them by <code>---</code>:</p>
+
+<pre><code># Slide 1
+
+Hello world!
+
+---
+
+# Slide 2
+
+Hello program!
+</code></pre>
+
+</section><section>
+
+<h3 id="add-slides-with-other-files">Add slides with other files</h3>
+
+<p>Add slides to <code>content/home/*.md</code></p>
+
+<pre><code class="language-markdown">+++
+weight = 10
++++
+
+# Slide 3
+
+---
+
+# Slide 4
+</code></pre>
+
+<p><small>💡 Tip: Use <code>weight</code> to specify the order that files should be added.</small></p>
+
+</section><section>
+
+<h3 id="presentation-at-section">Presentation at &lsquo;/{section}/&rsquo;</h3>
+
+<p>In <code>content/{section}/_index.md</code>:</p>
+
+<pre><code class="language-markdown">+++
+outputs = [&quot;Reveal&quot;]
++++
+
+# Slide 1
+
+---
+
+# Slide 2
+</code></pre>
+
+</section><section>
+
+<p>Add slides from other files in <code>content/{section}/*.md</code></p>
+
+<pre><code class="language-markdown">+++
+weight = 10
++++
+
+# Slide 3
+
+---
+
+# Slide 4
+</code></pre>
+
+<p><small>💡 Tip: Use <code>weight</code> to specify the order that files should be added.</small></p>
+</section><section>
+
+<h1 id="configuration">Configuration</h1>
+
+<p>Place configuration values in <code>config.toml</code> or a presentation&rsquo;s front matter (<code>_index.md</code>).</p>
+
+</section><section>
+
+<h2 id="reveal-js-themes">Reveal.js themes</h2>
+
+<p>Themes control the look and feel of your presentation. Set the <code>theme</code> param to any <a href="https://github.com/hakimel/reveal.js/#theming">valid Reveal.js theme</a>.</p>
+
+<pre><code class="language-toml">[params.reveal_hugo]
+theme = &quot;moon&quot;
+</code></pre>
+
+</section><section>
+
+<h2 id="use-a-custom-theme">Use a custom theme</h2>
+
+<p>To use a custom Reveal.js theme, place the CSS file in the <code>static</code> directory and set the <code>custom_theme</code> param.</p>
+
+<pre><code class="language-toml">[params.reveal_hugo]
+custom_theme = &quot;reveal-hugo/themes/robot-lung.css&quot;
+</code></pre>
+
+</section><section>
+
+<h2 id="bundled-themes">Bundled themes</h2>
+
+<p>reveal-hugo comes with 2 extra Reveal.js themes:</p>
+
+<ul>
+<li><a href="https://github.com/dzello/revealjs-themes#robot-lung">robot-lung</a> (this one)</li>
+<li><a href="https://github.com/dzello/revealjs-themes#sunblind">sunblind</a></li>
+</ul>
+
+<p><br>
+<small>
+They live in the <code>static/reveal-hugo/themes</code> folder and also <a href="https://github.com/dzello/revealjs-themes">on Github</a>.
+</small></p>
+
+</section><section>
+
+<h2 id="reveal-js-params">Reveal.js params</h2>
+
+<p>Set <strong>snakecase</strong> versions of Reveal.js params, which will be camelized and passed to <code>Reveal.initialize</code>.</p>
+
+<pre><code class="language-toml">[params.reveal_hugo]
+history = true
+slide_number = true
+transition = 'zoom'
+transition_speed = 'fast'
+</code></pre>
+
+<p><a href="https://github.com/hakimel/reveal.js/#configuration">Full list of params</a></p>
+
+</section><section>
+
+<h2 id="highlight-js-themes">highlight.js themes</h2>
+
+<p>To change the syntax highlighting theme, set the <code>highlight_theme</code>
+to a valid <a href="https://highlightjs.org/static/demo/">highlight.js theme name</a>.</p>
+
+<pre><code class="language-toml">[params.reveal_hugo]
+highlight_theme = &quot;zenburn&quot;
+</code></pre>
+
+</section><section>
+
+<h2 id="extending-the-layout">Extending the layout</h2>
+
+<p>Use partials to add HTML to the page for one or all presentations at a time.</p>
+
+<p><small>
+💡 This is the recommended way to add script and style tags to customize your presentations.
+</small></p>
+
+</section><section>
+
+<p>Here is where partials go for different presentations and places on the page.
+<br><br></p>
+
+<table>
+<thead>
+<tr>
+<th>Presentation</th>
+<th>Before &lt;/head&gt;</th>
+<th>Before &lt;/body&gt;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>All</td>
+<td>reveal-hugo/head.html</td>
+<td>reveal-hugo/body.html</td>
+</tr>
+
+<tr>
+<td>Root</td>
+<td>home/reveal-hugo/head.html</td>
+<td>home/reveal-hugo/body.html</td>
+</tr>
+
+<tr>
+<td>Section</td>
+<td>{section}/reveal-hugo/head.html</td>
+<td>{section}/reveal-hugo/body.html</td>
+</tr>
+</tbody>
+</table>
+
+</section><section>
+
+<h2 id="custom-css-example">Custom CSS Example</h2>
+
+<p>In <code>home/reveal-hugo/head.html</code>:</p>
+
+<pre><code class="language-html">&lt;style&gt;
+.reveal section h1 {
+  color: blue;
+}
+&lt;/style&gt;
+</code></pre>
+
+</section><section>
+
+<h2 id="custom-js-example">Custom JS Example</h2>
+
+<p>In <code>home/reveal-hugo/body.html</code>:</p>
+
+<pre><code class="language-html">&lt;script type=&quot;text/javascript&quot;&gt;
+Reveal.addEventListener('slidechanged', function(event) {
+  console.log(&quot;🎞️ Slide is now &quot; + event.indexh);
+});
+&lt;/script&gt;
+</code></pre>
+</section><section>
+
+<h1 id="resources">Resources</h1>
+
+</section><section>
+
+<h2 id="code-and-docs">Code and docs</h2>
+
+<ul>
+<li><a href="https://github.com/dzello/reveal-hugo">reveal-hugo Github README</a></li>
+<li><a href="https://github.com/dzello/reveal-hugo/tree/master/exampleSite">Content for this presentation</a></li>
+</ul>
+
+</section><section>
+
+<h2 id="external-resources">External resources</h2>
+
+<ul>
+<li><a href="https://revealjs.com/">Reveal.js</a></li>
+<li><a href="https://gohugo.io/">Hugo docs</a></li>
+<li><a href="https://gohugo.io/templates/output-formats/">Hugo output format docs</a></li>
+</ul>
+
+</section><section>
+
+<h2 id="designed-to">Designed to&hellip;</h2>
+
+<ul>
+<li>Deploy to <a href="https://netlify.com/">Netlify</a></li>
+<li>Edit with <a href="https://forestry.io/">Forestry</a></li>
+</ul>
+
+</section><section>
+
+<h1 id="toc_4">🙏</h1>
+
+<p>Contribute by opening issues and pull requests.</p>
+
+</section><section>
+
+<h1 id="thanks">Thanks!</h1>
+
+</section><section>
+
+<h1 id="toc_6">↩️</h1>
+
+<h4 id="start-over"><a href="#">Start over</a></h4>
+</section>
+  </div>
+</div>
+<script type="application/json" id="reveal-hugo-site-params">{"history":true}</script>
+    <script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"reveal-hugo/themes/robot-lung.css","highlight_theme":"color-brewer","margin":0.2,"templates":{"hotpink":{"background":"#FF4081","class":"hotpink"}},"transition":"slide","transition_speed":"fast"}</script>
+    <script type="text/javascript"> window.revealHugoDependencies = { dependencies: [ { src: '\/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '\/reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '\/reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '\/reveal-js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '\/reveal-js/plugin/zoom-js/zoom.js', async: true },
+          
+          { src: '\/reveal-js\/plugin\/notes\/notes.js', async: true }
+      ]};
+    </script>
+    <script src="/reveal-js/lib/js/head.min.js"></script>
+    <script src="/reveal-js/js/reveal.js"></script>
+    <script type="text/javascript">
+      
+      
+      function camelize(map) {
+        if (map) {
+          Object.keys(map).forEach(function(k) {
+            newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+            if (newK != k) {
+              map[newK] = map[k];
+              delete map[k];
+            }
+          });
+        }
+        return map;
+      }
+      
+      var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+      var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+      var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+      
+      var options = Object.assign({},
+        camelize(revealHugoDefaults),
+        camelize(revealHugoSiteParams),
+        camelize(revealHugoPageParams),
+        revealHugoDependencies);
+      Reveal.initialize(options);
+    </script>
+    <div class="line top"></div>
+<div class="line bottom"></div>
+<div class="line left"></div>
+<div class="line right"></div>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-24132749-1"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', "UA-24132749-1");
+</script>
+    
+
+
+<script type="text/javascript">
+
+Reveal.addEventListener('slidechanged', function(event) {
+  console.log("🎞️ Slide is now " + event.indexh);
+});
+</script>
+
+  </body>
+</html>
