@@ -1,12 +1,11 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Open Science Group"
-disableKinds = ["sitemap", "RSS"]
 theme = "."
 themesDir = "../"
 
 [author]
-name = "Josh Dzielak"
+name = "David Bovill"
 
 [params.reveal_hugo]
 history = true

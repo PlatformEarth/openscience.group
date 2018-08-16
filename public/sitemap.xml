@@ -3,28 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/home/body/</loc>
+    <loc>/home/publishing/</loc>
   </url>
   
   <url>
-    <loc>/home/conclusion/</loc>
+    <loc>/home/features/</loc>
   </url>
   
   <url>
-    <loc>/platform/</loc>
+    <loc>/section-example/presentation/</loc>
   </url>
   
   <url>
-    <loc>/platform/body/</loc>
+    <loc>/home/usage/</loc>
   </url>
   
   <url>
-    <loc>/platform/conclusion/</loc>
+    <loc>/home/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>/home/resources/</loc>
   </url>
   
   <url>
     <loc>/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/section-example/</loc>
   </url>
   
   <url>

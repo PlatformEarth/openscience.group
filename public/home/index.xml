@@ -12,20 +12,57 @@
     
     <item>
       <title></title>
-      <link>/home/body/</link>
+      <link>/home/publishing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/body/</guid>
-      <description> home appends to the root presentation </description>
+      <guid>/home/publishing/</guid>
+      <description>Publishing Legal Open Science Group The Open Science Group is a not-for-profit and open member organisation, with the purpose of exploring ways in which the wider community of scientists can come together to express and make decisions aligned with open science principles.
+Governance Acting together. Platform Open source tools for attribution, funding, and publishing open science.
+Funding  Deploy to Netlify Edit with Forestry  🙏 Contribute by opening issues and pull requests.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/home/conclusion/</link>
+      <link>/home/features/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/conclusion/</guid>
-      <description> home appends to the end of the root presentation </description>
+      <guid>/home/features/</guid>
+      <description> What&amp;rsquo;s included?  All Reveal.js HTML, CSS and JS (v3.7.0) All out-of-the-box Reveal.js themes Two custom Reveal.js themes (including this one)  Features  Write slides in Markdown in one or more files Shorcodes for fragments, sections, slides &amp;amp; more All Reveal.js parameters can be customized Any Hugo section can be output as a presentation  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/home/usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/usage/</guid>
+      <description>Usage Prerequisite First, add this to your config.toml:
+[outputFormats.Reveal] baseName = &amp;quot;index&amp;quot; mediaType = &amp;quot;text/html&amp;quot; isHTML = true  Presentation at site root Create content/_index.md:
++++ outputs = [&amp;quot;Reveal&amp;quot;] +++ # Slide 1 Hello world!  Add slides in same file Separate them by ---:
+# Slide 1 Hello world! --- # Slide 2 Hello program!  Add slides with other files Add slides to content/home/*.md
++++ weight = 10 +++ # Slide 3 --- # Slide 4  💡 Tip: Use weight to specify the order that files should be added.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/home/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/configuration/</guid>
+      <description>Configuration Place configuration values in config.toml or a presentation&amp;rsquo;s front matter (_index.md).
+Reveal.js themes Themes control the look and feel of your presentation. Set the theme param to any valid Reveal.js theme.
+[params.reveal_hugo] theme = &amp;quot;moon&amp;quot;  Use a custom theme To use a custom Reveal.js theme, place the CSS file in the static directory and set the custom_theme param.
+[params.reveal_hugo] custom_theme = &amp;quot;reveal-hugo/themes/robot-lung.css&amp;quot;  Bundled themes reveal-hugo comes with 2 extra Reveal.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/home/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/resources/</guid>
+      <description> Resources Code and docs  reveal-hugo Github README Content for this presentation  External resources  Reveal.js Hugo docs Hugo output format docs  Designed to&amp;hellip;  Deploy to Netlify Edit with Forestry  🙏 Contribute by opening issues and pull requests.
+Thanks! ↩️ Start over </description>
     </item>
     
   </channel>
