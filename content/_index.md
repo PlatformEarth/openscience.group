@@ -1,14 +1,20 @@
 +++
-title = "My presentation"
+title = "Open Science Group"
 outputs = ["Reveal"]
 +++
 
-# Hello world!
+## Open Science Group
 
-This is my first slide.
+The Open Science Group is a not-for-profit and open member organisation, with the purpose of exploring ways in which the wider community of scientists can come together to express and make decisions aligned with open science principles.
 
 ---
 
-# Hello Mars!
+# Governance
 
-This is my second slide.
+Acting together.
+
+---
+
+# Platform
+
+Open source tools for attribution, funding, and publishing open science.
