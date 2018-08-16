@@ -3,7 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/home/body/</loc>
+  </url>
+  
+  <url>
+    <loc>/home/conclusion/</loc>
+  </url>
+  
+  <url>
+    <loc>/platform/</loc>
+  </url>
+  
+  <url>
+    <loc>/platform/body/</loc>
+  </url>
+  
+  <url>
+    <loc>/platform/conclusion/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/home/</loc>
     <priority>0</priority>
   </url>
   
