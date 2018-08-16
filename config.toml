@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Open Science Group"
 
 theme = "reveal-hugo"
-
 [outputFormats.Reveal]
 baseName = "index"
 mediaType = "text/html"
