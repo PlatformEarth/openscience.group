@@ -1,20 +1,22 @@
 +++
-title = "Open Science Group"
+title = "reveal-hugo"
+description = "A Hugo theme for creating Reveal.js presentations"
 outputs = ["Reveal"]
+[reveal_hugo]
+custom_theme = "reveal-hugo/themes/robot-lung.css"
+margin = 0.2
+highlight_theme = "color-brewer"
+transition = "slide"
+transition_speed = "fast"
+[reveal_hugo.templates.hotpink]
+class = "hotpink"
+background = "#FF4081"
 +++
 
-## Open Science Group
+# 📽️
 
-The Open Science Group is a not-for-profit and open member organisation, with the purpose of exploring ways in which the wider community of scientists can come together to express and make decisions aligned with open science principles.
+# reveal-hugo
 
----
+A Hugo theme for creating Reveal.js presentations.
 
-# Governance
-
-Acting together.
-
----
-
-# Platform
-
-Open source tools for attribution, funding, and publishing open science.
+~ made by [@dzello](https://dzello.com/) ~
