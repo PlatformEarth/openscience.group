@@ -20,6 +20,18 @@ The Open Science Group is a not-for-profit and open member organisation, with th
 
 ---
 
+{{% section %}}
+
 ## Funding
 
 As with any activity, the way funding is allocated is central to the effectiveness of the project. This is particularly the case with science in which the product being produced (knowledge) is intangible and hard to price.
+
+---
+
+# Vertical slide 1
+
+---
+
+# Vertical slide 2
+
+{{% /section %}}

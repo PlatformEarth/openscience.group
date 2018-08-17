@@ -1,7 +1,39 @@
 <!-- This partial is included before the end of the head tag for only the 'example' presentation -->
 <!-- A common use would be to add CSS to the page to customize the theme -->
+
+<script>
+  var pheading="Open Science Platform";
+</script>
+
 <style>
-/* Add padding, margin and a hover effect on code samples */
+/* Here we can create a bottom bar.*/
+
+.reveal .controls {
+  bottom: 1.3em;
+  right: 4em;
+  color: white;
+  z-index: 205;
+}
+
+/*.line {background: #FF4081;}*/
+.line {background: white;}
+
+  .line.bottom {
+    color: white;
+    background: black;
+
+    line-height: 4.0em;
+    height: 3.8em;
+    text-indent: 1em;
+    font-size: 2.2em;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: none;
+} }
+
 .reveal section pre {
   box-shadow: none;
   margin-top: 25px;
