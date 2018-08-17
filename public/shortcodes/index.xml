@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shortcodes on Open Science Group</title>
+    <link>/shortcodes/</link>
+    <description>Recent content in Shortcodes on Open Science Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/shortcodes/29_introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/29_introduction/</guid>
+      <description>Shortcodes Hugo&amp;rsquo;s shortcodes are similar to functions or templates that extend what you can do with Markdown.
+Shortcode documentation</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/shortcodes/30_fragment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/30_fragment/</guid>
+      <description>Fragment The fragment shortcode makes content appear incrementally.
+{{% fragment %}} One {{% /fragment %}} {{% fragment %}} Two {{% /fragment %}} {{% fragment %}} Three {{% /fragment %}}  One  Two  Three 
+Frag The frag shortcode is more terse than fragment. It accepts a c attribute.
+{{&amp;lt; frag c=&amp;quot;One&amp;quot; &amp;gt;}} {{&amp;lt; frag c=&amp;quot;Two&amp;quot; &amp;gt;}} {{&amp;lt; frag c=&amp;quot;Three&amp;quot; &amp;gt;}}  One  Two  Three</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/shortcodes/33_section/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/33_section/</guid>
+      <description>Section The section shortcode groups slides into a vertical display.
+
+ use the down arrow or swipe down to continue  🔽
+Put the shortcode around the slides you want to group together.
+{{% section %}} ## Section slide 1 --- ## Section slide 2 {{% /section %}}  Keep going down.
+That&amp;rsquo;s it! Use the right arrow or swipe right to continue.
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/shortcodes/34_slide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/34_slide/</guid>
+      <description>Slide Use this shortcode when you need to customize slide attributes like id, class, background color and transition.
+Slide Add the shortcode above the slide&amp;rsquo;s content, below the ---.
+--- {{&amp;lt; slide class=&amp;quot;hello&amp;quot; &amp;gt;}} ## Hello, world! ---  Custom slide 1 Did you notice? This slide has a fast zoom transition.
+--- {{&amp;lt; slide transition=&amp;quot;zoom&amp;quot; transition-speed=&amp;quot;fast&amp;quot; &amp;gt;}} ## Custom slide 1 ---  Custom slide 2 This slide has a different background color.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/shortcodes/36_markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/36_markdown/</guid>
+      <description>## Markdown Reveal.js has its own [markdown processor](https://github.com/hakimel/reveal.js#markdown). To use that instead of Hugo, surround a slide with the markdown shortcode. ```markdown {{}} # Hello world! {{}} ```  💡 Make sure to use the `{{}}` shortcode syntax to avoid rendering by Hugo.  --- Reveal.js markdown uses HTML comments to change slide properties, like background color. ```markdown {{}} # I&#39;m a colorful slide {{}} ```   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/shortcodes/38_other/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shortcodes/38_other/</guid>
+      <description>Note Add speaker notes to your presentation with the note shortcode.
+{{% note %}} Type &#39;s&#39; to see this slide&#39;s speaker notes. {{% /note %}}  You found the speaker notes!
+ Write slides in HTML Use a section tag with a data-noprocess attribute to avoid any processing by reveal-hugo.
+ &amp;lt;section data-noprocess&amp;gt; &amp;lt;h1&amp;gt;Hello world!&amp;lt;/h1&amp;gt; &amp;lt;section&amp;gt; 💡 This is useful if you can&#39;t get Markdown to output exactly what you want.</description>
+    </item>
+    
+  </channel>
+</rss>

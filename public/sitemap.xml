@@ -15,27 +15,27 @@
   </url>
   
   <url>
-    <loc>/home/shortcodes/29_introduction/</loc>
+    <loc>/shortcodes/29_introduction/</loc>
   </url>
   
   <url>
-    <loc>/home/shortcodes/30_fragment/</loc>
+    <loc>/shortcodes/30_fragment/</loc>
   </url>
   
   <url>
-    <loc>/home/shortcodes/33_section/</loc>
+    <loc>/shortcodes/33_section/</loc>
   </url>
   
   <url>
-    <loc>/home/shortcodes/34_slide/</loc>
+    <loc>/shortcodes/34_slide/</loc>
   </url>
   
   <url>
-    <loc>/home/shortcodes/36_markdown/</loc>
+    <loc>/shortcodes/36_markdown/</loc>
   </url>
   
   <url>
-    <loc>/home/shortcodes/38_other/</loc>
+    <loc>/shortcodes/38_other/</loc>
   </url>
   
   <url>
@@ -49,6 +49,11 @@
   
   <url>
     <loc>/home/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/shortcodes/</loc>
     <priority>0</priority>
   </url>
   
