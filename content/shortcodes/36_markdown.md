@@ -1,7 +1,3 @@
-+++
-weight = 36
-+++
-
 {{< markdown >}}
 
 ## Markdown
@@ -35,4 +31,3 @@ Reveal.js markdown uses HTML comments to change slide properties, like backgroun
 ```
 
 {{< /markdown >}}
-

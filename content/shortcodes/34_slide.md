@@ -1,7 +1,3 @@
-+++
-weight = 34
-+++
-
 ## Slide
 
 Use this shortcode when you need to customize slide attributes like id, class, background color and transition.

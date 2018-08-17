@@ -1,7 +1,3 @@
-+++
-weight = 30
-+++
-
 ## Fragment
 
 The `fragment` shortcode makes content appear incrementally.
@@ -38,4 +34,3 @@ Both `fragment` and `frag` accept two additional parameters:
 
 - `class`: sets the class of the wrapping `span` element
 - `index`: controls the order in which sections will appear
-

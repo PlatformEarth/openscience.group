@@ -1,7 +1,3 @@
-+++
-weight = 33
-+++
-
 {{% section %}}
 
 ## Section
@@ -40,5 +36,3 @@ Keep going down.
 Use the right arrow or swipe right to continue.
 
 {{% /section %}}
-
-

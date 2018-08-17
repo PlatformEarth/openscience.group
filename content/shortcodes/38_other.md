@@ -1,7 +1,3 @@
-+++
-weight = 38
-+++
-
 ## Note
 
 Add speaker notes to your presentation with the note shortcode.
