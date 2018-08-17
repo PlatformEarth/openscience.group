@@ -8,6 +8,10 @@ weight = 2
 
 ---
 
+![First slide](osg/osg.001.jpeg)
+
+---
+
 ## Publishing
 
 The purpose of science is to create knowledge for the benefit of humanity. A key pillar of the free and open sharing of scientific knowledge across disciplines and across domains. The Open Science Group's remit is to further these aims by facilitating the widest dissemination of scientific knowledge possible.
