@@ -1,0 +1,110 @@
+<!doctype html><html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Example of a section presentation</title>
+    
+    <meta name="author" content="David Bovill">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/reveal-js/css/reveal.css">
+    <link rel="stylesheet" href="/reveal-js/css/theme/moon.css" id="theme"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '\/reveal-js/css/print/pdf.css' : '\/reveal-js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    
+  </head>
+  <body>
+  <div class="reveal">
+  
+  <div class="slides">
+    
+    <section>
+
+<h1 id="section-presentation">Section Presentation</h1>
+
+<p>This is an example of a section presentation.</p>
+
+</section><section>
+
+<p>Section presentations are completely separate from the root presentation and each other.</p>
+
+</section><section>
+
+<p>Additional content files can be placed in the section and will be added to the presentation in the order of their weight.</p>
+</section><section>
+
+<h1 id="including">Including&hellip;</h1>
+
+<p>Content from files like this one.</p>
+</section>
+  </div>
+</div>
+<script type="application/json" id="reveal-hugo-site-params">{"history":true}</script>
+    <script type="application/json" id="reveal-hugo-page-params">{"theme":"moon"}</script>
+    <script type="text/javascript"> window.revealHugoDependencies = { dependencies: [ { src: '\/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '\/reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '\/reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '\/reveal-js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '\/reveal-js/plugin/zoom-js/zoom.js', async: true },
+          
+          { src: '\/reveal-js\/plugin\/notes\/notes.js', async: true }
+      ]};
+    </script>
+    <script src="/reveal-js/lib/js/head.min.js"></script>
+    <script src="/reveal-js/js/reveal.js"></script>
+    <script type="text/javascript">
+      
+      
+      function camelize(map) {
+        if (map) {
+          Object.keys(map).forEach(function(k) {
+            newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+            if (newK != k) {
+              map[newK] = map[k];
+              delete map[k];
+            }
+          });
+        }
+        return map;
+      }
+      
+      var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+      var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+      var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+      
+      var options = Object.assign({},
+        camelize(revealHugoDefaults),
+        camelize(revealHugoSiteParams),
+        camelize(revealHugoPageParams),
+        revealHugoDependencies);
+      Reveal.initialize(options);
+    </script>
+    <div class="line top"></div>
+<div class="line left"></div>
+<div class="line right"></div>
+<div id="osp_navbar" class="line bottom"></div>
+
+<script>
+  var element = document.getElementById("osp_navbar");
+  console.log(element);
+  console.log(element.innerHTML);
+  element.innerHTML = pheading;
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-24132749-1"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', "UA-24132749-1");
+</script>
+
+    
+  </body>
+</html>
