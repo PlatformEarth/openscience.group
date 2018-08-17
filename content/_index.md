@@ -6,16 +6,16 @@ outputs = ["Reveal"]
 [reveal_hugo]
 margin = 0.2
 highlight_theme = "color-brewer"
-transition = "zoom"
+transition = "slide"
 transition_speed = "fast"
-
 custom_theme = "reveal-hugo/themes/robot-lung.css"
+
 [reveal_hugo.templates.hotpink]
 class = "hotpink"
 background = "#FF4081"
 +++
 
-# 📽️
+# 🔬
 
 ## Open Science Group
 

@@ -3,11 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/home/publishing/</loc>
-  </url>
-  
-  <url>
-    <loc>/home/features/</loc>
+    <loc>/home/02_publishing/</loc>
   </url>
   
   <url>
@@ -15,15 +11,31 @@
   </url>
   
   <url>
-    <loc>/home/usage/</loc>
+    <loc>/home/21_peer-review/</loc>
   </url>
   
   <url>
-    <loc>/home/configuration/</loc>
+    <loc>/home/shortcodes/29_introduction/</loc>
   </url>
   
   <url>
-    <loc>/home/resources/</loc>
+    <loc>/home/shortcodes/30_fragment/</loc>
+  </url>
+  
+  <url>
+    <loc>/home/shortcodes/33_section/</loc>
+  </url>
+  
+  <url>
+    <loc>/home/shortcodes/34_slide/</loc>
+  </url>
+  
+  <url>
+    <loc>/home/shortcodes/36_markdown/</loc>
+  </url>
+  
+  <url>
+    <loc>/home/shortcodes/38_other/</loc>
   </url>
   
   <url>

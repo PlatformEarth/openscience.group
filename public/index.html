@@ -59,356 +59,484 @@
     
     <section>
 
-<h1 id="toc_0">📽️</h1>
+<h1 id="toc_0">🔬</h1>
 
 <h2 id="open-science-group">Open Science Group</h2>
 
 <p>The Open Science Group is a not-for-profit and open membership organisation working towards creating new ways for scientists to reshape the way they are funded and incentivised to create open science.</p>
 </section><section>
 
-<h1 id="publishing">Publishing</h1>
+<h1 id="science">Science</h1>
+
+<p><img src="osg/osg.001.jpeg" alt="First slide" /></p>
 
 </section><section>
 
-<h2 id="legal">Legal</h2>
+<h2 id="publishing">Publishing</h2>
 
-<p>Open Science Group The Open Science Group is a not-for-profit and open member organisation, with the purpose of exploring ways in which the wider community of scientists can come together to express and make decisions aligned with open science principles.</p>
+<p>The purpose of science is to create knowledge for the benefit of humanity. A key pillar of the free and open sharing of scientific knowledge across disciplines and across domains. The Open Science Group&rsquo;s remit is to further these aims by facilitating the widest dissemination of scientific knowledge possible.</p>
 
 </section><section>
 
 <h2 id="governance-acting-together">Governance Acting together.</h2>
 
-<p>Platform Open source tools for attribution, funding, and publishing open science.</p>
+<p>The Open Science Group is a not-for-profit and open member organisation, with the purpose of exploring ways in which the wider community of scientists can come together to express and make decisions aligned with open science principles.</p>
 
 </section><section>
 
 <h2 id="funding">Funding</h2>
 
-<ul>
-<li>Deploy to <a href="https://netlify.com/">Netlify</a></li>
-<li>Edit with <a href="https://forestry.io/">Forestry</a></li>
-</ul>
+<p>As with any activity, the way funding is allocated is central to the effectiveness of the project. This is particularly the case with science in which the product being produced (knowledge) is intangible and hard to price.</p>
+</section><section>
+
+<h1 id="peer-review">Peer Review</h1>
+
+<p>The scientific method is about to be applied to the peer review process for the first time since the custom evolved in the 18th-century and did not become commonplace until the mid-20th-century.</p>
+
+<p><img src="osg/osg.001.jpeg" alt="First slide" /></p>
+</section><section>
+
+<h1 id="shortcodes">Shortcodes</h1>
 
 </section><section>
 
-<h1 id="toc_4">🙏</h1>
+<p>Hugo&rsquo;s shortcodes are similar to functions or templates that extend what you can do with Markdown.</p>
 
-<p>Contribute by opening issues and pull requests.</p>
-
+<p><a href="https://gohugo.io/content-management/shortcodes/">Shortcode documentation</a></p>
 </section><section>
 
-<h1 id="thanks">Thanks!</h1>
+<h2 id="fragment">Fragment</h2>
 
-</section><section>
+<p>The <code>fragment</code> shortcode makes content appear incrementally.</p>
 
-<h1 id="toc_6">↩️</h1>
-
-<h4 id="start-over"><a href="#">Start over</a></h4>
-</section><section>
-
-<h2 id="what-s-included">What&rsquo;s included?</h2>
-
-<ul>
-<li>All Reveal.js HTML, CSS and JS (v3.7.0)</li>
-<li>All out-of-the-box Reveal.js themes</li>
-<li>Two custom Reveal.js themes (including this one)</li>
-</ul>
-
-</section><section>
-
-<h2 id="features">Features</h2>
-
-<ul>
-<li>Write slides in Markdown in one or more files</li>
-<li>Shorcodes for fragments, sections, slides &amp; more</li>
-<li>All Reveal.js parameters can be customized</li>
-<li>Any Hugo section can be output as a presentation</li>
-</ul>
-</section><section>
-
-<h1 id="usage">Usage</h1>
-
-</section><section>
-
-<h2 id="prerequisite">Prerequisite</h2>
-
-<p>First, add this to your <code>config.toml</code>:</p>
-
-<pre><code class="language-toml">[outputFormats.Reveal]
-baseName = &quot;index&quot;
-mediaType = &quot;text/html&quot;
-isHTML = true
+<pre><code>{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} Two {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
 </code></pre>
 
+<p><span class='fragment '
+  >
+  One
+</span>
+<span class='fragment '
+  >
+  Two
+</span>
+<span class='fragment '
+  >
+  Three
+</span></p>
+
 </section><section>
 
-<h3 id="presentation-at-site-root">Presentation at site root</h3>
+<h2 id="frag">Frag</h2>
 
-<p>Create <code>content/_index.md</code>:</p>
+<p>The <code>frag</code> shortcode is more terse than <code>fragment</code>. It accepts a <code>c</code> attribute.</p>
 
-<pre><code class="language-markdown">+++
-outputs = [&quot;Reveal&quot;]
-+++
-
-# Slide 1
-
-Hello world!
+<pre><code>{{&lt; frag c=&quot;One&quot; &gt;}}
+{{&lt; frag c=&quot;Two&quot; &gt;}}
+{{&lt; frag c=&quot;Three&quot; &gt;}}
 </code></pre>
 
-</section><section>
-
-<h3 id="add-slides-in-same-file">Add slides in same file</h3>
-
-<p>Separate them by <code>---</code>:</p>
-
-<pre><code># Slide 1
-
-Hello world!
-
----
-
-# Slide 2
-
-Hello program!
-</code></pre>
+<p><span class='fragment '
+  >
+  One
+</span>
+<span class='fragment '
+  >
+  Two
+</span>
+<span class='fragment '
+  >
+  Three
+</span></p>
 
 </section><section>
 
-<h3 id="add-slides-with-other-files">Add slides with other files</h3>
-
-<p>Add slides to <code>content/home/*.md</code></p>
-
-<pre><code class="language-markdown">+++
-weight = 10
-+++
-
-# Slide 3
-
----
-
-# Slide 4
-</code></pre>
-
-<p><small>💡 Tip: Use <code>weight</code> to specify the order that files should be added.</small></p>
-
-</section><section>
-
-<h3 id="presentation-at-section">Presentation at &lsquo;/{section}/&rsquo;</h3>
-
-<p>In <code>content/{section}/_index.md</code>:</p>
-
-<pre><code class="language-markdown">+++
-outputs = [&quot;Reveal&quot;]
-+++
-
-# Slide 1
-
----
-
-# Slide 2
-</code></pre>
-
-</section><section>
-
-<p>Add slides from other files in <code>content/{section}/*.md</code></p>
-
-<pre><code class="language-markdown">+++
-weight = 10
-+++
-
-# Slide 3
-
----
-
-# Slide 4
-</code></pre>
-
-<p><small>💡 Tip: Use <code>weight</code> to specify the order that files should be added.</small></p>
-</section><section>
-
-<h1 id="configuration">Configuration</h1>
-
-<p>Place configuration values in <code>config.toml</code> or a presentation&rsquo;s front matter (<code>_index.md</code>).</p>
-
-</section><section>
-
-<h2 id="reveal-js-themes">Reveal.js themes</h2>
-
-<p>Themes control the look and feel of your presentation. Set the <code>theme</code> param to any <a href="https://github.com/hakimel/reveal.js/#theming">valid Reveal.js theme</a>.</p>
-
-<pre><code class="language-toml">[params.reveal_hugo]
-theme = &quot;moon&quot;
-</code></pre>
-
-</section><section>
-
-<h2 id="use-a-custom-theme">Use a custom theme</h2>
-
-<p>To use a custom Reveal.js theme, place the CSS file in the <code>static</code> directory and set the <code>custom_theme</code> param.</p>
-
-<pre><code class="language-toml">[params.reveal_hugo]
-custom_theme = &quot;reveal-hugo/themes/robot-lung.css&quot;
-</code></pre>
-
-</section><section>
-
-<h2 id="bundled-themes">Bundled themes</h2>
-
-<p>reveal-hugo comes with 2 extra Reveal.js themes:</p>
+<p>Both <code>fragment</code> and <code>frag</code> accept two additional parameters:</p>
 
 <ul>
-<li><a href="https://github.com/dzello/revealjs-themes#robot-lung">robot-lung</a> (this one)</li>
-<li><a href="https://github.com/dzello/revealjs-themes#sunblind">sunblind</a></li>
+<li><code>class</code>: sets the class of the wrapping <code>span</code> element</li>
+<li><code>index</code>: controls the order in which sections will appear</li>
 </ul>
+</section><section><section data-shortcode-section>
+<h2 id="section">Section</h2>
+
+<p>The <code>section</code> shortcode groups slides into a <strong>vertical display</strong>.</p>
 
 <p><br>
 <small>
-They live in the <code>static/reveal-hugo/themes</code> folder and also <a href="https://github.com/dzello/revealjs-themes">on Github</a>.
-</small></p>
+use the down arrow or swipe down to continue
+</small>
+<br>
+<a href="#" class="navigate-down">🔽</a></p>
 
 </section><section>
 
-<h2 id="reveal-js-params">Reveal.js params</h2>
+<p>Put the shortcode around the slides you want to group together.</p>
 
-<p>Set <strong>snakecase</strong> versions of Reveal.js params, which will be camelized and passed to <code>Reveal.initialize</code>.</p>
+<pre><code class="language-markdown">{{% section %}}
 
-<pre><code class="language-toml">[params.reveal_hugo]
-history = true
-slide_number = true
-transition = 'zoom'
-transition_speed = 'fast'
+## Section slide 1
+
+---
+
+## Section slide 2
+
+{{% /section %}}
 </code></pre>
 
-<p><a href="https://github.com/hakimel/reveal.js/#configuration">Full list of params</a></p>
+<p>Keep going down.</p>
 
 </section><section>
 
-<h2 id="highlight-js-themes">highlight.js themes</h2>
+<h2 id="that-s-it">That&rsquo;s it!</h2>
 
-<p>To change the syntax highlighting theme, set the <code>highlight_theme</code>
-to a valid <a href="https://highlightjs.org/static/demo/">highlight.js theme name</a>.</p>
+<p>Use the right arrow or swipe right to continue.</p>
 
-<pre><code class="language-toml">[params.reveal_hugo]
-highlight_theme = &quot;zenburn&quot;
+</section>
+</section><section>
+
+<h2 id="slide">Slide</h2>
+
+<p>Use this shortcode when you need to customize slide attributes like id, class, background color and transition.</p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      class="hello">
+  
+
+<h2 id="slide-1">Slide</h2>
+
+<p>Add the shortcode above the slide&rsquo;s content, below the <code>---</code>.</p>
+
+<pre><code class="language-markdown">---
+
+{{&lt; slide class=&quot;hello&quot; &gt;}}
+
+## Hello, world!
+
+---
 </code></pre>
 
-</section><section>
+</section>
 
-<h2 id="extending-the-layout">Extending the layout</h2>
 
-<p>Use partials to add HTML to the page for one or all presentations at a time.</p>
+<section data-noprocess data-shortcode-slide
+      data-transition="zoom"
+      data-transition-speed="fast">
+  
 
-<p><small>
-💡 This is the recommended way to add script and style tags to customize your presentations.
-</small></p>
+<h2 id="custom-slide-1">Custom slide 1</h2>
 
-</section><section>
+<p><small>Did you notice? This slide has a fast zoom transition.</small></p>
 
-<p>Here is where partials go for different presentations and places on the page.
+<pre><code class="language-markdown">---
+
+{{&lt; slide transition=&quot;zoom&quot; transition-speed=&quot;fast&quot; &gt;}}
+
+## Custom slide 1
+
+---
+</code></pre>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background="#FF4081">
+  
+
+<h2 id="custom-slide-2">Custom slide 2</h2>
+
+<p><small>This slide has a different background color.</small></p>
+
+<pre><code class="language-markdown">---
+
+{{&lt; slide background=&quot;#FF4081&quot; &gt;}}
+
+## Custom slide 2
+
+---
+</code></pre>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      id="custom-slide">
+  
+
+<p>💡 Tip: Setting a slide&rsquo;s <code>id</code> attribute makes it easy to link to from other parts of the presentation.
 <br><br></p>
 
-<table>
-<thead>
-<tr>
-<th>Presentation</th>
-<th>Before &lt;/head&gt;</th>
-<th>Before &lt;/body&gt;</th>
-</tr>
-</thead>
+<pre><code class="language-markdown">---
 
-<tbody>
-<tr>
-<td>All</td>
-<td>reveal-hugo/head.html</td>
-<td>reveal-hugo/body.html</td>
-</tr>
+{{&lt; slide id=&quot;custom-slide&quot; &gt;}}
 
-<tr>
-<td>Root</td>
-<td>home/reveal-hugo/head.html</td>
-<td>home/reveal-hugo/body.html</td>
-</tr>
+## Custom slide
 
-<tr>
-<td>Section</td>
-<td>{section}/reveal-hugo/head.html</td>
-<td>{section}/reveal-hugo/body.html</td>
-</tr>
-</tbody>
-</table>
+---
+</code></pre>
 
 </section><section>
 
-<h2 id="custom-css-example">Custom CSS Example</h2>
+<pre><code class="language-markdown">[Try the link](#custom-slide)
+</code></pre>
 
-<p>In <code>home/reveal-hugo/head.html</code>:</p>
+<p><br>
+<a href="#custom-slide">Try the link</a></p>
+
+</section><section>
+
+<p>Slide attribute possibilities from the <a href="https://github.com/hakimel/reveal.js">Reveal.js docs</a>:</p>
+
+<ul>
+<li><code>autoslide</code></li>
+<li><code>state</code></li>
+<li><code>background</code></li>
+<li><code>background-color</code></li>
+<li><code>background-image</code></li>
+<li><code>background-size</code></li>
+<li><code>background-position</code></li>
+<li><code>background-repeat</code></li>
+</ul>
+
+</section><section>
+
+<ul>
+<li><code>background-video</code></li>
+<li><code>background-video-loop</code></li>
+<li><code>background-video-muted</code></li>
+<li><code>background-interactive</code></li>
+<li><code>background-iframe</code></li>
+<li><code>background-transition</code></li>
+<li><code>transition</code> (can have different in and out transitions)</li>
+<li><code>transition-speed</code></li>
+<li><code>notes</code> (can also use the note shortcode)</li>
+<li><code>timing</code></li>
+</ul>
+
+</section><section>
+
+<section data-shortcode-section>
+<h2 id="slide-templates">Slide templates</h2>
+
+<p>Store sets of common slide attributes in front matter variables and apply them to slides with the template attribute.</p>
+
+<p><br>
+<small>
+navigate down to learn more
+</small>
+<br>
+<a href="#" class="navigate-down">🔽</a></p>
+
+</section><section>
+
+<p>Create templates in config.toml, _index.md or the current page&rsquo;s front matter. Put them under the <strong>templates</strong> key with a meaningful name:</p>
+
+<pre><code class="language-toml">[reveal_hugo.templates.hotpink]
+class = &quot;hotpink&quot;
+background = &quot;#FF4081&quot;
+</code></pre>
+
+</section>
+
+<p><section data-noprocess data-shortcode-slide
+    data-background="#FF4081"
+    class="hotpink"
+    data-template="hotpink"></p>
+
+<p>Apply the template using the <strong>template</strong> attribute of the slide shortcode:</p>
+
+<pre><code class="language-markdown">{{&lt; slide template=&quot;hotpink&quot; &gt;}}
+
+# I'm a hot pink slide!
+</code></pre>
+
+</section><section>
+
+<p>If a template exists in multiple configurations, it&rsquo;s properties will be merged. If a property is declared multiple times, the order of precedence is:</p>
+
+<ul>
+<li>page</li>
+<li>section (_index.md)</li>
+<li>site (config.toml)</li>
+</ul>
+
+</section>
+
+</section>
+
+<section data-shortcode-section>
+<p><section data-noprocess data-shortcode-slide>
+  <h2 id="reusable-slides">Reusable slides</h2></p>
+
+<p>Store markdown in a <a href="https://gohugo.io/templates/data-templates/">data template</a> and reuse it in multiple sections or presentations.</p>
+
+<p><br>
+<small>
+navigate down to learn more
+</small>
+<br>
+<a href="#" class="navigate-down">🔽</a></p>
+
+<p></section>
+<section data-noprocess data-shortcode-slide></p>
+
+<p>Add a <code>example</code> key to data/home.toml:</p>
+
+<pre><code class="language-toml">example = &quot;I'm a slide&quot;
+</code></pre>
+
+<p><br></p>
+
+<p>Set the <code>content</code> attribute to &ldquo;home.example&rdquo;:</p>
+
+<pre><code class="language-markdown">---
+
+{{&lt; slide content=&quot;home.example&quot; &gt;}}
+
+---
+</code></pre>
+
+<p></section>
+<section data-noprocess data-shortcode-slide></p>
+
+<p>💡 Each data template entry can contain one or more slides, separated by <code>---</code> with newlines.</p>
+
+<p></section>
+<section data-noprocess data-shortcode-slide></p>
+
+<p>💡 All other slide shortcode attributes (background, transition, etc.) can be used and will be applied to each slide in the data template entry.</p>
+
+</section>
+
+</section><section>
+
+<section data-shortcode-section>
+<h2 id="slide-specific-css">Slide-specific CSS</h2>
+
+<p>Add more variety to your presentation by applying slide-specific CSS.</p>
+
+<p><br>
+<small>
+navigate down to learn more
+</small>
+<br>
+<a href="#" class="navigate-down">🔽</a></p>
+
+</section><section>
+
+<p>First, use the <code>slide</code> shortcode to give the slide a class:</p>
+
+<pre><code class="language-markdown">---
+
+{{&lt; slide class=&quot;side-by-side&quot; &gt;}}
+
+# 📈
+
+# 📊
+
+---
+</code></pre>
+
+</section><section>
+
+<p>Next, use a layout extension partial like <code>reveal-hugo/head.html</code> to add CSS selectors:</p>
 
 <pre><code class="language-html">&lt;style&gt;
-.reveal section h1 {
-  color: blue;
+.reveal section.side-by-side h1 {
+  position: absolute;
+}
+.reveal section.side-by-side h1:first-of-type {
+  left: 25%;
+}
+.reveal section.side-by-side h1:nth-of-type(2) {
+  right: 25%;
 }
 &lt;/style&gt;
 </code></pre>
 
+</section>
+
+<p><section data-noprocess data-shortcode-slide
+      class="side-by-side"></p>
+
+<h1>📈</h1>
+
+<h1>📊</h1>
+
+</section>
+</section><section data-noprocess data-markdown
+  data-separator="^\r?\n---\r?\n$"
+  data-separator-vertical="^\r?\n------\r?\n$"
+  data-separator-notes="notes?:">
+  <script type="text/template">
+    
+
+## Markdown
+
+Reveal.js has its own [markdown processor](https://github.com/hakimel/reveal.js#markdown). To use that instead of Hugo, surround a slide with the markdown shortcode.
+
+```markdown
+{{< markdown >}}
+
+# Hello world!
+
+{{< /markdown >}}
+```
+
+<br>
+<small>
+💡 Make sure to use the `{{< >}}` shortcode syntax to avoid rendering by Hugo.
+</small>
+
+---
+
+<!-- .slide: data-background="#FF4081" -->
+
+Reveal.js markdown uses HTML comments to change slide properties, like background color.
+
+```markdown
+{{< markdown >}}
+<!-- .slide: data-background="#FF4081" -->
+# I'm a colorful slide
+{{< /markdown >}}
+```
+
+
+  </script>
+</section>
 </section><section>
 
-<h2 id="custom-js-example">Custom JS Example</h2>
+<h2 id="note">Note</h2>
 
-<p>In <code>home/reveal-hugo/body.html</code>:</p>
+<p>Add speaker notes to your presentation with the note shortcode.</p>
 
-<pre><code class="language-html">&lt;script type=&quot;text/javascript&quot;&gt;
-Reveal.addEventListener('slidechanged', function(event) {
-  console.log(&quot;🎞️ Slide is now &quot; + event.indexh);
-});
-&lt;/script&gt;
+<pre><code class="language-markdown">{{% note %}}
+
+Type 's' to see this slide's speaker notes.
+
+{{% /note %}}
 </code></pre>
-</section><section>
 
-<h1 id="resources">Resources</h1>
+<aside class="notes"><p>You found the speaker notes!</p>
+</aside>
 
-</section><section>
+</section>
 
-<h2 id="code-and-docs">Code and docs</h2>
-
-<ul>
-<li><a href="https://github.com/dzello/reveal-hugo">reveal-hugo Github README</a></li>
-<li><a href="https://github.com/dzello/reveal-hugo/tree/master/exampleSite">Content for this presentation</a></li>
-</ul>
-
-</section><section>
-
-<h2 id="external-resources">External resources</h2>
-
-<ul>
-<li><a href="https://revealjs.com/">Reveal.js</a></li>
-<li><a href="https://gohugo.io/">Hugo docs</a></li>
-<li><a href="https://gohugo.io/templates/output-formats/">Hugo output format docs</a></li>
-</ul>
-
-</section><section>
-
-<h2 id="designed-to">Designed to&hellip;</h2>
-
-<ul>
-<li>Deploy to <a href="https://netlify.com/">Netlify</a></li>
-<li>Edit with <a href="https://forestry.io/">Forestry</a></li>
-</ul>
-
-</section><section>
-
-<h1 id="toc_4">🙏</h1>
-
-<p>Contribute by opening issues and pull requests.</p>
-
-</section><section>
-
-<h1 id="thanks">Thanks!</h1>
-
-</section><section>
-
-<h1 id="toc_6">↩️</h1>
-
-<h4 id="start-over"><a href="#">Start over</a></h4>
+<section data-noprocess>
+  <h2>Write slides in HTML</h2>
+  <p>Use a <code>section</code> tag with a <code>data-noprocess</code> attribute to avoid any processing by reveal-hugo.</p>
+  <pre>
+&lt;section data-noprocess&gt;
+  &lt;h1&gt;Hello world!&lt;/h1&gt;
+&lt;section&gt;</pre>
+  <small>💡 This is useful if you can't get Markdown to output exactly what you want.</small>
+</section>
 </section>
   </div>
 </div>
