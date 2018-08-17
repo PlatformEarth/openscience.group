@@ -8,7 +8,35 @@ weight = 2
 
 ---
 
+{{< slide background-iframe="http://google.com" >}}
+
+---
+
 ![First slide](osg/osg.001.jpeg)
+
+---
+
+{{< slide
+  background-image="osg/osg.001.jpeg"
+  background-size="90%"
+  background-transition="slide"
+  transition-speed="slow"
+>}}
+
+---
+
+{{<slide background-image="osg/osg.002.jpeg" background-size="90%"
+background-transition="slide" transition-speed="slow">}}
+
+---
+
+{{<slide background-image="osg/osg.003.jpeg" background-size="90%"
+background-transition="slide" transition-speed="slow">}}
+
+---
+
+{{<slide background-image="osg/osg.004.jpeg" background-size="90%"
+background-transition="slide" transition-speed="slow">}}
 
 ---
 
