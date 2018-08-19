@@ -8,7 +8,20 @@ weight = 2
 
 ---
 
-{{< slide background-iframe="http://google.com" >}}
+{{< slide
+  background-iframe="https://www.openscience.group/section-example/#/"
+  background-size="90%"
+  background-transition="slide"
+  transition-speed="slow"
+>}}
+
+---
+
+<section data-background-iframe="https://www.openscience.group/section-example/#/" data-background-interactive></section>
+
+---
+
+<iframe data-src="https://www.openscience.group/section-example/#/"></iframe>
 
 ---
 
