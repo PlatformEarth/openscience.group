@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Open Science Group</title>
+    <link>/home/</link>
+    <description>Recent content in Homes on Open Science Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/home/02_publishing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/02_publishing/</guid>
+      <description>Science   Publishing The purpose of science is to create knowledge for the benefit of humanity. A key pillar of the free and open sharing of scientific knowledge across disciplines and across domains. The Open Science Group&amp;rsquo;s remit is to further these aims by facilitating the widest dissemination of scientific knowledge possible.
+Governance Acting together. The Open Science Group is a not-for-profit and open member organisation, with the purpose of exploring ways in which the wider community of scientists can come together to express and make decisions aligned with open science principles.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/home/21_peer-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/21_peer-review/</guid>
+      <description>Peer Review The scientific method is about to be applied to the peer review process for the first time since the custom evolved in the 18th-century and did not become commonplace until the mid-20th-century.</description>
+    </item>
+    
+  </channel>
+</rss>
