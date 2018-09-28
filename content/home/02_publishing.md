@@ -4,8 +4,6 @@ weight = 2
 
 # Science
 
----
-
 {{< slide
   background-image="osg/osg.001.jpeg"
   background-size="90%"
