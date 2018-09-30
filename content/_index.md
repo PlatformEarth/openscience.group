@@ -14,7 +14,9 @@ custom_theme = "reveal-hugo/themes/robot-lung.css"
 class = "hotpink"
 background = "#FF4081"
 +++
-
+<section data-noprocess>
+  <h1>Hello, world!</h1>
+</section>
 # 🔬
 
 ## Open Science Group
