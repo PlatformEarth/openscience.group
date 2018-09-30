@@ -17,6 +17,6 @@ background = "#FF4081"
 
 # 🔬
 
-## Open Science Group Now!
+## Open Science Group
 
 The Open Science Group is a not-for-profit and open membership organisation working towards creating new ways for scientists to reshape the way they are funded and incentivised to create open science.
