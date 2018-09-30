@@ -14,9 +14,7 @@ custom_theme = "reveal-hugo/themes/robot-lung.css"
 class = "hotpink"
 background = "#FF4081"
 +++
-<section data-noprocess>
-  <button type="button">Click Me!</button>
-</section>
+
 # 🔬
 
 ## Open Science Group
