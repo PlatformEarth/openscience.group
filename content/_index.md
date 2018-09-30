@@ -15,16 +15,7 @@ class = "hotpink"
 background = "#FF4081"
 +++
 <section data-noprocess>
-  .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
+  <button type="button">Click Me!</button>
 </section>
 # 🔬
 
