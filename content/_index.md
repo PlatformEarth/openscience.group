@@ -20,3 +20,4 @@ background = "#FF4081"
 ## Open Science Group
 
 The Open Science Group is a not-for-profit and open membership organisation working towards creating new ways for scientists to reshape the way they are funded and incentivised to create open science. 2020 is the year we release our first software.
+
